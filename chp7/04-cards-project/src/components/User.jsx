@@ -1,9 +1,11 @@
 import React from 'react'
 
 const User = (props) => {
-  return (
+
+  console.log(props)
+  return ( 
     <div style={{color:'green'}}>
-      {props.name}
+      krish
     </div>
   )
 }
