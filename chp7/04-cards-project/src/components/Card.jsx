@@ -26,7 +26,7 @@ const   Card = (props) => {
           <div className="center-low">
             <h5>{props.type} </h5>
             <h6>{props.experience }</h6>
-          </div>
+          </div>  
         </div>
 
         <div className="bottom">
