@@ -1,34 +1,71 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import React from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
+// const App = () => {
 
+//    const btnclick = () => {
+//     console.log("button is clicked ");
+//   }
+
+//   const mouse = () => {
+//     console.log('mouse enter')
+//   }
+
+//   return (
+//     <div>
+//       <h1>Hello ,Krish</h1>
+
+//       <button onMouseEnter={mouse} onClick={() => {
+//         console.log('button is clicked')
+//       }} >Change User</button>
+//       <button onMouseEnter={mouse} onClick={btnclick} >explore this</button>
+//     </div>
+//   )
+// }
+// export default App
+
+// import React from "react";
+
+// const App = () => {
+//   function inputchanges(val) {
+//     console.log(val);
+//   }
+//   return (
+//     <div>
+//       <input
+//         onChange={function (elem) {
+//           inputchanges(elem);
+//         }}
+//         placeholder="enter your name"
+//         type="text"
+//       />
+
+//       <div
+//         onClick={() => {
+//           console.log("div is clikked");
+//         }}
+//         onMouseEnter={function () {
+//           console.log("mouse has enter ");
+//         }}
+//         className="box" >
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+
+import React from 'react'
+
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div onWheel ={(elem)=> {
+      console.log(elem.deltaY)
+    }}>
+      <div className="page1">hi</div>
+      <div className="page2"></div>
+      <div className="page3"></div>
+    </div>
   )
 }
 
